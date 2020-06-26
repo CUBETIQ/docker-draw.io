@@ -1,6 +1,6 @@
 FROM tomcat:9-jre8-alpine
 
-LABEL maintainer="Florian JUDITH <florian.judith@gmail.com>"
+LABEL maintainer="Sambo Chea <sombochea@cubetiqs.com>"
 
 RUN apk add \
     openjdk8 apache-ant git patch xmlstarlet certbot curl && \
