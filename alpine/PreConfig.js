@@ -8,7 +8,7 @@
 // This proxy configuration allows https requests to the export server via Tomcat.
 window.EXPORT_URL = "/export";
 
-window.PLANT_URL = "REPLACE_WITH_YOUR_PLANTUML_SERVER";
+window.PLANT_URL = null;
 
 window.DRAW_MATH_URL = "math";
 
