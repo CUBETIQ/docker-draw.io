@@ -6,7 +6,7 @@ TAG=0.1-alpine
 ROOT_CONTAINER=$REGISTRY/$CONTAINER:$TAG
 
 echo "Building image..."
-docker build -f alpine/Dockerfile . -t $ROOT_CONTAINER
+docker build . -t $ROOT_CONTAINER
 
 echo "Pushing image to $ROOT_CONTAINER"
 docker push $ROOT_CONTAINER
