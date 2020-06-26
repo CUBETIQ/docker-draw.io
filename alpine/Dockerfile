@@ -3,6 +3,13 @@ FROM tomcat:9-jre8-alpine
 LABEL maintainer="Florian JUDITH <florian.judith@gmail.com>"
 LABEL maintainer="Sambo Chea <sombochea@cubetiqs.com>"
 
+# Setup Timezone
+RUN apk update && \
+    apk add tzdata && \
+    cp /usr/share/zoneinfo/Asia/Phnom_Penh /etc/localtime && \
+    echo "Asia/Phnom_Penh" > /etc/timezone && \
+    apk del tzdata
+    
 RUN apk add \
     openjdk8 apache-ant git patch xmlstarlet certbot curl && \
     cd /tmp && \
