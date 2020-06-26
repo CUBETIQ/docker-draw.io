@@ -1,4 +1,5 @@
 /**
+ * Copyright (c) 2020, CUBETIQ Solution
  * Copyright (c) 2006-2019, JGraph Ltd
  * Copyright (c) 2006-2019, draw.io AG
  */

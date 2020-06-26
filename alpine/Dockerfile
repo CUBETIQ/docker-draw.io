@@ -1,5 +1,6 @@
 FROM tomcat:9-jre8-alpine
 
+LABEL maintainer="Florian JUDITH <florian.judith@gmail.com>"
 LABEL maintainer="Sambo Chea <sombochea@cubetiqs.com>"
 
 RUN apk add \
@@ -13,7 +14,7 @@ RUN apk add \
     unzip /tmp/drawio/build/draw.war -d $CATALINA_HOME/webapps/draw && \
     apk del --purge openjdk8 apache-ant git patch && \
     rm -rf \
-        /tmp/drawio
+    /tmp/drawio
 
 # Update server.xml to set Draw.io webapp to root
 RUN cd $CATALINA_HOME && \
